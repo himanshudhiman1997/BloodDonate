@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/detailsphoto"
+    android:background="@drawable/m2"
     android:orientation="vertical"
     tools:context=".DonorDetailsActivity">
 
@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="15dp"
+        android:textColor="#C0C0C0"
         android:text="My Details"
         android:textSize="25sp" />
 
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Name"
+        android:textColor="#C0C0C0"
         android:textSize="20sp" />
 
     <TextView
@@ -30,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Age"
+        android:textColor="#C0C0C0"
         android:textSize="20sp" />
 
     <TextView
@@ -38,6 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Gender"
+        android:textColor="#C0C0C0"
         android:textSize="20sp" />
 
     <TextView
@@ -46,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Blood Group"
+        android:textColor="#C0C0C0"
         android:textSize="20sp" />
 
     <TextView
@@ -54,6 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Address"
+        android:textColor="#C0C0C0"
         android:textSize="20sp" />
 
     <TextView
@@ -62,6 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Phone"
+        android:textColor="#C0C0C0"
         android:textSize="20sp" />
 
     <LinearLayout
@@ -74,6 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
+            android:textColor="#C0C0C0"
             android:background="@drawable/my_button_bg"
             android:onClick="needBlood"
             android:text="Need Blood" />
@@ -83,6 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
+            android:textColor="#C0C0C0"
             android:background="@drawable/my_button_bg"
             android:onClick="signOut"
             android:text="Sign Out" />

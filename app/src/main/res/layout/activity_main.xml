@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainphoto"
+    android:background="@drawable/m1"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -33,6 +33,7 @@
             android:layout_above="@+id/needBlood"
             android:layout_centerHorizontal="true"
             android:background="@drawable/my_button_bg"
+            android:textColor="#C0C0C0"
             android:onClick="donateBlood"
             android:text="Donate Blood" />
 
@@ -46,6 +47,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/my_button_bg"
             android:onClick="needBlood"
+            android:textColor="#C0C0C0"
             android:text="Need Blood" />
     </RelativeLayout>
 
