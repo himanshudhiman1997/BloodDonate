@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/m2"
+    android:background="@drawable/rounddesign1"
     tools:context=".DonateBloodActivity">
 
     <LinearLayout
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:textColor="#C0C0C0"
+            android:textColor="#000000"
             android:gravity="center_horizontal"
             android:text="Enter the details"
             android:textSize="30sp" />
@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:textColor="#C0C0C0"
+            android:textColor="#000000"
             android:text="Gender: " />
 
         <RadioGroup
@@ -69,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:textColor="#C0C0C0"
+            android:textColor="#000000"
             android:text="Phone:" />
 
         <EditText
@@ -95,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:textColor="#C0C0C0"
+            android:textColor="#000000"
             android:text="Blood Group:" />
 
         <RadioGroup
@@ -103,61 +103,86 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp">
 
-            <RadioButton
-                android:id="@+id/aPosRadioButton"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:textColor="#C0C0C0"
                 android:layout_height="wrap_content"
-                android:text="A+" />
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-            <RadioButton
-                android:id="@+id/aNegRadioButton"
-                android:layout_width="match_parent"
-                android:textColor="#C0C0C0"
-                android:layout_height="wrap_content"
-                android:text="A-" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
 
-            <RadioButton
-                android:id="@+id/bPosRadioButton"
-                android:layout_width="match_parent"
-                android:textColor="#C0C0C0"
-                android:layout_height="wrap_content"
-                android:text="B+" />
+                    <RadioButton
+                        android:id="@+id/aPosRadioButton"
+                        android:layout_width="match_parent"
+                        android:textColor="#C0C0C0"
+                        android:layout_height="wrap_content"
+                        android:text="A+" />
 
-            <RadioButton
-                android:id="@+id/bNegRadioButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#C0C0C0"
-                android:text="B-" />
+                    <RadioButton
+                        android:id="@+id/aNegRadioButton"
+                        android:layout_width="match_parent"
+                        android:textColor="#C0C0C0"
+                        android:layout_height="wrap_content"
+                        android:text="A-" />
 
-            <RadioButton
-                android:id="@+id/abPosRadioButton"
-                android:layout_width="match_parent"
-                android:textColor="#C0C0C0"
-                android:layout_height="wrap_content"
-                android:text="AB+" />
+                    <RadioButton
+                        android:id="@+id/bPosRadioButton"
+                        android:layout_width="match_parent"
+                        android:textColor="#C0C0C0"
+                        android:layout_height="wrap_content"
+                        android:text="B+" />
 
-            <RadioButton
-                android:id="@+id/abNegRadioButton"
-                android:layout_width="match_parent"
-                android:textColor="#C0C0C0"
-                android:layout_height="wrap_content"
-                android:text="AB-" />
+                    <RadioButton
+                        android:id="@+id/bNegRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C0C0C0"
+                        android:text="B-" />
 
-            <RadioButton
-                android:id="@+id/oPosRadioButton"
-                android:layout_width="match_parent"
-                android:textColor="#C0C0C0"
-                android:layout_height="wrap_content"
-                android:text="O+" />
 
-            <RadioButton
-                android:id="@+id/oNegRadioButton"
-                android:layout_width="match_parent"
-                android:textColor="#C0C0C0"
-                android:layout_height="wrap_content"
-                android:text="O-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/abPosRadioButton"
+                        android:layout_width="match_parent"
+                        android:textColor="#C0C0C0"
+                        android:layout_height="wrap_content"
+                        android:text="AB+" />
+
+                    <RadioButton
+                        android:id="@+id/abNegRadioButton"
+                        android:layout_width="match_parent"
+                        android:textColor="#C0C0C0"
+                        android:layout_height="wrap_content"
+                        android:text="AB-" />
+
+                    <RadioButton
+                        android:id="@+id/oPosRadioButton"
+                        android:layout_width="match_parent"
+                        android:textColor="#C0C0C0"
+                        android:layout_height="wrap_content"
+                        android:text="O+" />
+
+                    <RadioButton
+                        android:id="@+id/oNegRadioButton"
+                        android:layout_width="match_parent"
+                        android:textColor="#C0C0C0"
+                        android:layout_height="wrap_content"
+                        android:text="O-" />
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </RadioGroup>
 
@@ -166,9 +191,11 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
-            android:textColor="#C0C0C0"
+            android:textColor="#000000"
             android:layout_margin="10dp"
-            android:background="@drawable/my_button_bg"
+            android:background="@drawable/roundbutton"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
             android:text="Submit" />
     </LinearLayout>
 </ScrollView>

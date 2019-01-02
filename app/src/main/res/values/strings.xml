@@ -27,4 +27,5 @@ Been tested positive for antibodies to HIV.
 </string>
     <string name="title_activity_donor_terms">DonorTerms</string>
     <string name="title_activity_accepter_terms">AccepterTerms</string>
+    <string name="tnc"><u>Terms and conditions</u></string>
 </resources>

@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/rounddesign1"
     android:orientation="vertical"
     tools:context=".AccepterDetailsActivity">
 
@@ -12,8 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="15dp"
-        android:textColor="#C0C0C0"
         android:text="My Details"
+        android:textColor="#000000"
         android:textSize="25sp" />
 
     <TextView
@@ -21,8 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:textColor="#000000"
         android:text="Name"
+        android:textColor="#000000"
         android:textSize="20sp" />
 
     <TextView
@@ -30,17 +32,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:textColor="#000000"
         android:text="Age"
+        android:textColor="#000000"
         android:textSize="20sp" />
 
     <TextView
         android:id="@+id/genderTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
         android:layout_margin="10dp"
         android:text="Gender"
+        android:textColor="#000000"
         android:textSize="20sp" />
 
 
@@ -48,48 +50,44 @@
         android:id="@+id/addressTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
         android:layout_margin="10dp"
         android:text="Address"
+        android:textColor="#000000"
         android:textSize="20sp" />
 
     <TextView
         android:id="@+id/phoneTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
         android:layout_margin="10dp"
         android:text="Phone"
+        android:textColor="#000000"
         android:textSize="20sp" />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#C0C0C0"
-        android:orientation="horizontal"
-        android:weightSum="2">
+        android:layout_margin="10dp"
+        android:background="@drawable/roundbutton"
+        android:text="Check for Blood"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"/>
 
-        <Button
-            android:id="@+id/checkButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#C0C0C0"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/my_button_bg"
-            android:text="Check for Blood" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundbutton"
+        android:onClick="signout"
+        android:layout_gravity="center_horizontal"
+        android:text="Sign Out"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="#000000" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#C0C0C0"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/my_button_bg"
-            android:onClick="signout"
-            android:text="Sign Out" />
-
-    </LinearLayout>
 
 </LinearLayout>
