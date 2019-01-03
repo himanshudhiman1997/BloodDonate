@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rounddesign1"
     tools:context=".DonateBloodActivity">
 
     <LinearLayout
@@ -196,6 +195,7 @@
             android:background="@drawable/roundbutton"
             android:paddingStart="30dp"
             android:paddingEnd="30dp"
+            android:elevation="10dp"
             android:text="Submit" />
     </LinearLayout>
 </ScrollView>

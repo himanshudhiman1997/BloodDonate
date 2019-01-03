@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rounddesign1"
     tools:context=".AccepterTerms"
     android:padding="5dp">
 
@@ -164,6 +163,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/roundbutton"
                 android:onClick="accept"
+                android:elevation="10dp"
                 android:text="Accept" />
 
             <Button
@@ -173,6 +173,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/roundbutton"
                 android:onClick="cancel"
+                android:elevation="10dp"
                 android:text="Cancel" />
 
         </LinearLayout>

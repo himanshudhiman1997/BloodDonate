@@ -163,8 +163,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/my_button_bg"
+                android:background="@drawable/roundbutton"
                 android:onClick="accept"
+                android:elevation="10dp"
                 android:text="Accept" />
 
             <Button
@@ -172,8 +173,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/my_button_bg"
+                android:background="@drawable/roundbutton"
                 android:onClick="cancel"
+                android:elevation="10dp"
                 android:text="Cancel" />
 
         </LinearLayout>

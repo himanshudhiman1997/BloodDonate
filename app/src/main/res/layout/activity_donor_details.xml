@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rounddesign1"
     android:orientation="vertical"
     android:padding="15dp"
     tools:context=".DonorDetailsActivity">
@@ -85,6 +84,7 @@
             android:textColor="#000000"
             android:background="@drawable/roundbutton"
             android:onClick="needBlood"
+            android:elevation="10dp"
             android:text="Need Blood" />
 
         <Button
@@ -95,6 +95,7 @@
             android:textColor="#000000"
             android:background="@drawable/roundbutton"
             android:onClick="signOut"
+            android:elevation="10dp"
             android:text="Sign Out" />
 
     </LinearLayout>
