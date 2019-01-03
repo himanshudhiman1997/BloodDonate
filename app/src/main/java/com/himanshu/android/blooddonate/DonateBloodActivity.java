@@ -77,6 +77,8 @@ public class DonateBloodActivity extends AppCompatActivity {
                 donorPhone = donorPhoneEdit.getText().toString().trim();
                 donorAddress = donorAddressEdit.getText().toString().trim();
 
+                int age = Integer.getInteger(donorAge);
+
 
                 if (maleRadioButton.isChecked()) {
                     gender = "Male";
@@ -102,7 +104,19 @@ public class DonateBloodActivity extends AppCompatActivity {
                 }
                 if (donorName == null || donorPhone == null || donorAddress == null || donorAge == null || gender.equals("") || bloodGroup.equals("")) {
                     Toast.makeText(DonateBloodActivity.this, "Enter all the details", Toast.LENGTH_SHORT).show();
-                } else {
+                }
+                else if(donorPhone.length() != 10)
+                {
+                    Toast.makeText(DonateBloodActivity.this, "Enter the correct phone number", Toast.LENGTH_SHORT).show();
+                }
+
+                else if(age < 17)
+                {
+                    Toast.makeText(DonateBloodActivity.this, "Your age does not allow you to donate blood", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(DonateBloodActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
+                else {
                     addDonor();
 
                     donorNameEdit.setText("");
